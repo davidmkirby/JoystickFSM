@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/joystick.png</file>
+        <file>Resources/fsm.png</file>
+        <file>Resources/advantech.png</file>
+        <file>Resources/sine.png</file>
+        <file>Resources/sine_down.png</file>
+        <file>Resources/square.png</file>
+        <file>Resources/square_down.png</file>
+        <file>Resources/triangle.png</file>
+        <file>Resources/triangle_down.png</file>
+        <file>Resources/manual.png</file>
+    </qresource>
+</RCC>
