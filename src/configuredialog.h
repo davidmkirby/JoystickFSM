@@ -28,6 +28,38 @@ struct ConfigureParameter
     int aoChannelStart;
     int aoChannelCount;
     ValueRange aoValueRange;
+    int pointCountPerWave;
+
+    // Joystick settings
+    QString joystickBackend;  // "Auto", "Legacy", or "Libinput"
+    double deadzone;
+    double xScale;
+    double yScale;
+    bool invertX;
+    bool invertY;
+
+    // Constructor with default values
+    ConfigureParameter() :
+        aiDeviceName(""),
+        aiProfilePath(""),
+        aoDeviceName(""),
+        aoProfilePath(""),
+        aiChannelStart(0),
+        aiChannelCount(2),
+        aiValueRange(V_ExternalRefBipolar),
+        clockRatePerChan(1000),
+        sectionLength(1024),
+        aoChannelStart(0),
+        aoChannelCount(2),
+        aoValueRange(V_ExternalRefBipolar),
+        pointCountPerWave(400),
+        joystickBackend("Auto"),
+        deadzone(0.05),
+        xScale(1.0),
+        yScale(1.0),
+        invertX(false),
+        invertY(false)
+    {}
 };
 
 namespace Ui {
@@ -59,6 +91,14 @@ private slots:
     void AIButtonBrowseClicked();
     void AOButtonBrowseClicked();
     void TabChanged(int index);
+
+    // New joystick-related slots
+    void JoystickBackendChanged(int index);
+    void DeadzoneChanged(double value);
+    void XScaleChanged(double value);
+    void YScaleChanged(double value);
+    void InvertXChanged(bool checked);
+    void InvertYChanged(bool checked);
 };
 
 #endif // CONFIGUREDIALOG_H
