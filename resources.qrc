@@ -1,14 +1,24 @@
 <RCC>
     <qresource prefix="/">
-        <file>Resources/joystick.png</file>
-        <file>Resources/fsm.png</file>
-        <file>Resources/advantech.png</file>
-        <file>Resources/sine.png</file>
-        <file>Resources/sine_down.png</file>
-        <file>Resources/square.png</file>
-        <file>Resources/square_down.png</file>
-        <file>Resources/triangle.png</file>
-        <file>Resources/triangle_down.png</file>
-        <file>Resources/manual.png</file>
+        <file>resources/joystick.svg</file>
+        <file>resources/fsm.svg</file>
+        <file>resources/advantech.svg</file>
+        <file>resources/sine.svg</file>
+        <file>resources/sine_down.svg</file>
+        <file>resources/square.svg</file>
+        <file>resources/square_down.svg</file>
+        <file>resources/triangle.svg</file>
+        <file>resources/triangle_down.svg</file>
+        <file>resources/manual.svg</file>
+        <file>resources/manual_down.svg</file>
+        <file>resources/center.svg</file>
+        <file>resources/calibrate.svg</file>
+        <file>resources/refresh.svg</file>
+        <file>resources/mirror.svg</file>
+        <file>resources/config.svg</file>
+        <file>resources/start.svg</file>
+        <file>resources/stop.svg</file>
+        <file>resources/pause.svg</file>
+        <file>resources/about.svg</file>
     </qresource>
 </RCC>
